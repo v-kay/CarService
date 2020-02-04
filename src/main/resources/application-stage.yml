@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: heycar-microservice
+
+
+server: 
+  port: 8083
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info, health, metrics
+    metrics:
+      enabled: true
+      sensitive: false
