@@ -55,11 +55,15 @@ http://localhost:8083/v2/api-docs
 
 Run above package command to build jar and then run the following command to create docker image
 
+```
 docker build -t heycar-service .
+```
 
 Run the image using the command
 
+```
 docker run -p 8083:8083 heycar-service
+```
 
 
 ### Health Check
