@@ -51,6 +51,17 @@ and to get the above generated json using url, hit the url
 http://localhost:8083/v2/api-docs
 
 
+### Docker
+
+Run above package command to build jar and then run the following command to create docker image
+
+docker build -t heycar-service .
+
+Run the image using the command
+
+docker run -p 8083:8083 heycar-service
+
+
 ### Health Check
 
 To check the application health, endpoints are exposed by spring boot actuator. Here is the url
@@ -59,14 +70,10 @@ http://localhost:8083/actuator/health
 
 
 ### Metrics
-To know all available actuator endpooints
-
-http://localhost:8083/actuator
-
 Various metrics are exposed by spring boot actuator. Here is the url to list all available metrics
 
-http://localhost:8083/actuator/metrics
+http://localhost:8082/actuator/metrics
 
 To access any specific metrics, pick one from above list and hit this url
 
-http://localhost:8083/actuator/metrics/jvm.memory.max
+http://localhost:8082/actuator/metrics/jvm.memory.max
