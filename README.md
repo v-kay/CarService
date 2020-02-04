@@ -1,4 +1,4 @@
-# HeyCar Service
+# Car Service
 
 ### Build
 To build the project
@@ -59,10 +59,14 @@ http://localhost:8083/actuator/health
 
 
 ### Metrics
+To know all available actuator endpooints
+
+http://localhost:8083/actuator
+
 Various metrics are exposed by spring boot actuator. Here is the url to list all available metrics
 
-http://localhost:8082/actuator/metrics
+http://localhost:8083/actuator/metrics
 
 To access any specific metrics, pick one from above list and hit this url
 
-http://localhost:8082/actuator/metrics/jvm.memory.max
+http://localhost:8083/actuator/metrics/jvm.memory.max
